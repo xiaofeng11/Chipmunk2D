@@ -279,6 +279,7 @@ bias_coef(cpFloat errorBias, cpFloat dt)
 void cpSpaceSetStaticBody(cpSpace *space, cpBody *body);
 
 extern cpCollisionHandler cpCollisionHandlerDoNothing;
+extern CP_EXPORT cpCollisionHandler* get_cpCollisionHandlerDoNothing();
 
 void cpSpaceProcessComponents(cpSpace *space, cpFloat dt);
 

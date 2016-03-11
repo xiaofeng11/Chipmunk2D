@@ -102,6 +102,11 @@ cpCollisionHandler cpCollisionHandlerDoNothing = {
 	AlwaysCollide, AlwaysCollide, DoNothing, DoNothing, NULL
 };
 
+CP_EXPORT cpCollisionHandler * get_cpCollisionHandlerDoNothing()
+{
+    return &cpCollisionHandlerDoNothing;
+}
+
 // function to get the estimated velocity of a shape for the cpBBTree.
 static cpVect ShapeVelocityFunc(cpShape *shape){return shape->body->v;}
 
